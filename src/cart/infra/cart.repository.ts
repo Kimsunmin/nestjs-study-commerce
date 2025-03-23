@@ -12,7 +12,7 @@ export class CartRepository {
     return cartInfo;
   }
 
-  async getCartsByCustomerId(
+  async getCartByCustomerIds(
     customerId: number,
     tx: Prisma.TransactionClient = this.prisma,
   ): Promise<cart[]> {
